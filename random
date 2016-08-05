@@ -1,0 +1,16 @@
+from random import randint
+
+numeroDeVeces = 0
+numeroA = randint(0,1001)
+tuNumero = -1
+
+while tuNumero != numeroA :
+	tuNumero = input("Escoge un Numero del 0 al 1001")
+	if tuNumero != numeroA:
+		print "ESTAS MAL"
+	numeroDeVeces += 1
+	if tuNumero == str or tuNumero < 0 or tuNumero > 1001:
+		print "Eres medio tonto"
+		numeroDeVeces += 1
+if tuNumero == numeroA:
+	 print "GANASTE. Te tardaste %s veces" % str(numeroDeVeces)
